@@ -1,7 +1,7 @@
-PORTB         .equ $6000
-PORTA         .equ $6001
-DDRB          .equ $6002
-DDRA          .equ $6003
+PORTB         .equ $9000
+PORTA         .equ $9001
+DDRB          .equ $9002
+DDRA          .equ $9003
 
 COMMAND_MODE  .equ %00000000
 DATA_MODE     .equ %00100000
@@ -11,7 +11,7 @@ PULSE         .equ %10000000
 
 NPULSE        .equ %01111111
 
-ROM_START     .equ $8000
+ROM_START     .equ $a000
 RESET_VECTOR  .equ $fffc
 
   .org ROM_START

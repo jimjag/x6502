@@ -15,13 +15,13 @@ void usage() {
     printf("x6502: a simple 65C02/65C22 emulator\n");
     printf("usage: x6502 [OPTION]... FILE\n");
     printf("options:\n");
-    printf("  -b ADDR the base address at which code will be loaded (in hex, default 8000)\n");
+    printf("  -b ADDR the base address at which code will be loaded (in hex, default a000)\n");
     printf("  -r run as fast as possible\n");
     printf("  -4 use 4-bit mode for LCD\n");
 }
 
 int main(int argc, char *argv[]) {
-    int base_addr = 0x8000;
+    int base_addr = 0xa000;
     bool sprint = false;
     bool lcd_8_bit = true;
 
